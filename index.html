@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- Specifying the document title -->
+<!--
+    This html code is designed to Create a simple web page as my own biography
+    Name: Mohamed Ibrahim
+    Student number: 880883 
+-->
+<html lang="en">
+  <!-- Specifying the language of the page -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifying the font of the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moh Ibrahim Webpage</title>
+    <link rel="stylesheet" type="" href="css/myStyles.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/MyPic.jpg" />
+    <!-- External style sheets-->
+    <style>
+      /* Including Internal style sheets*/
+      * {
+        /* Including global style sheets*/
+        box-sizing: border-box;
+        margin: 10px;
+      }
+      main{
+        border: 1px black;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+      }
+      header{
+        border: 5px black;
+        width: 950px;
+        /* text-align: center; */
+        margin: auto;
+        float: left;
+      }
+
+      /* Styling using class */
+      .centertxt {
+        text-align: center;
+        background-color: transparent;
+      }
+
+      .center {
+        /* Including Box Model */
+        margin: auto;
+        text-align: center;
+        width: 40%;
+        border: 3px;
+        padding: 1px;
+      }
+      body {
+        background-image: url("images/CirclePattern.png"); /*src="images/MyPic.jpg" alt="My Pic" class="center"> <!-- To avoid errors from using width="150px" height="150px", I used small size image -->*/
+        background-color: rgb(173, 216, 230, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <header style="color: orange; font-size: x-large">
+      Welcome to my page ...
+    </header>
+    <!-- Including Inline style sheet -->
+    <h1 class="centertxt" style="color: darkblue">Mohamed Farahat Ibrahim</h1>
+    <!-- Heading -->
+    <hr />
+
+    <!-- Including my image -->
+    <img src="images/MyPic.jpg" alt="My Pic" width="150px" height="150px" />
+
+    <hr />
+    <p>
+      <!-- Paragraph -->
+      Welcome, I'm Mohamed Farhat Ibrahim. I have a Bachelor and Master degrees
+      on Electronics and communication Engineering, Zagazig University, Egypt. I
+      have a PhD in Electrical and Computer Engineering, University of Calgary.
+      I like programing since I was in the second year in university. I made the
+      best code in my class using Fortran at that time. I like soccer and
+      following Liverpool team as Salah is playing there.
+    </p>
+    <hr />
+    <!-- Ordered list -->
+    <section>
+      <h4>Research Interests</h4>
+      <ol>
+        <li>Software Development</li>
+        <li>Analog IC design</li>
+        <li>RF Low Noise Amplifiers</li>
+        <li>System-On-Chip</li>
+      </ol>
+    </section>
+
+    <hr />
+    <!-- Unordered list -->
+    <section>
+      <h4>Favorite Websites</h4>
+      <ul>
+        <li>
+          <a href="http://www.google.com" target="_self"> Google </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/learning" target="_self">
+            Linkedin Learning
+          </a>
+        </li>
+        <li>
+          <a href="https://www.Youtube.com" target="_self"> Youtube </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com" target="_self"> W3Schools </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr/>
+    <!-- Relative link -->
+    <h4>My Resume</h4>
+    <section>
+      <a
+        style="background-color: transparent"
+        href="content/MohamedIbrahim_Resume.pdf"
+        target="_self"
+      >
+        Go to my Resume</a
+      >
+    </section>
+    <hr />
+    <!-- Table with header row-->
+    <section>
+      <h3>Contact:</h3>
+      <table class="center">
+        <caption>
+          Contact Information
+        </caption>
+        <tr>
+          <!-- Including table header row-->
+          <th>Contact</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>mfraht@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>403-630-0146</td>
+        </tr>
+        <tr>
+          <td>Adders</td>
+          <td>Calgary Alberta, Canada</td>
+        </tr>
+        <tr>
+          <td>Old Website</td>
+          <td>
+            <!-- Absolute link -->
+            <a href="https://sites.google.com/site/mfraht/home" target="_self">
+              Go to My old webpage
+            </a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- Including a footer as a semantic markup -->
+
+    <br />
+    <hr />
+
+    <section id="form">   <!--     Cascading Styles -->
+      <h2>My contact form</h2>
+      <p>Please fill this form if you have any question to me</p>
+      <form action="#">
+        <p>
+          <label for="fname">First Name </label>
+          <input type="text" id="fname" placeholder="Your name..." />
+          <br />
+          <label for="lname">Last Name </label>
+          <input type="text" id="lname" placeholder="Your last name..." />
+          <br />
+          <label for="emailadd">Email </label>
+          <input
+            type="text"
+            id="emailadd"
+            placeholder="Email address"
+            required
+          />
+        </p>
+        <p>I'm a</p>
+        <p>
+          <select name="myselect">
+            <option value="opt1" selected>Student</option>
+            <option value="opt2">Staff member</option>
+            <option value="opt3">Employer</option>
+          </select>
+        </p>
+        <p>
+          <label for="comment">Please enter your comment here </label> <br />
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Comment..."
+            rows="3"
+          ></textarea>
+        </p>
+        <p>This comment is regarding:</p>
+        <p>
+          <label
+            ><input type="radio" name="myradio" checked /> Teaching
+            courses</label
+          >
+          <br /><label><input type="radio" name="myradio" /> Personal</label>
+          <br /><label
+            ><input type="radio" name="myradio" /> General help</label
+          >
+        </p>
+        <p>
+          <label
+            ><input type="checkbox" name="lab" /> Agree to all Privacy and
+            Terms</label
+          >
+        </p>
+        <input type="submit" value="Submit" />
+        <button type="reset" value="Reset" class="btn">Reset the form</button>
+      </form>
+    </section>
+
+    <footer>
+      <p class="centertxt">
+        This webpage is created and designed by Mohamed Ibrahim on July 7, 2021
+      </p>
+      <p class="centertxt">
+        <a href="mailto:mfraht@gmail.com" target="_self"
+          >Contact me via email</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
